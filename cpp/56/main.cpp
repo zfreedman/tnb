@@ -3,10 +3,14 @@ using namespace std;
 
 class Enemy {
   public:
-    // Pure virtual attack function
+    // Virtual attack function
     // Look in specific class instead of using
     // this base class's attack function
     virtual void attack () {};
+    // Pure virtual
+    // Objects with pure virtual functions cannot
+    // be instantiated, however the derived class can be
+    // virtual void attack () = 0;
 };
 
 class Ninja : public Enemy {
